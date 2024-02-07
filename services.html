@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/6843cc0703.js" crossorigin="anonymous"></script>
+  <title></title>
+</head>
+
+<body>
+  <div id="header-container"></div>
+
+  <main>
+    <div class="services">
+      <div class="service-card">
+        <h1>Studio</h1>
+        <img src="images/img6.jpg" alt="Denim Jeans" style="width:100%">
+        <div class="card-hover-text">
+          <h3>STUDIO</h3>
+          <p>30 minutes 10 edited pictures(maximum 2 outfits) - R 550</p>
+          <p>45 minutes 20 edited pictures(maximum 4 outfits) - R 850</p>
+          <p>1 hour 30 edited pictures(unlimited outfits) - R 1050</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <h1>Outdoor</h1>
+        <img src="images/img06.jpg" alt="Denim Jeans" style="width:100%">
+        <div class="card-hover-text">
+          <h3>OUTDOOR</h3>
+          Transport fee may apply
+          <p>45 minutes 20 edited pictures - R 950</p>
+          <p>1 hour 30 edited pictures - R 1 150</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <h1>Event</h1>
+        <img src="images/img006.jpg" alt="event" style="width:100%">
+        <div class="card-hover-text">
+          <h3>EVENTS(weddings, birthday parties, celebrations etc)</h3>
+          Request a qoute for your event
+          <p>3 hours event starting from R 1 500</p>
+          <p>6 hours(half a day) event starting from R 2 500</p>
+          <p>Full day event starting from R 3 500</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <h1>Family</h1>
+        <img src="images/img7.jpg" alt="event" style="width:100%">
+        <div class="card-hover-text">
+          <h3>FAMILY</h3>
+          Family of 5 or more people
+          <p>1 hour 30 edited pictures - R 1 250</p>
+          <p>2 hour 50 edited pictures - R 1 950</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <h1>Kids</h1>
+        <img src="images/img001.jpg" alt="event" style="width:100%">
+        <div class="card-hover-text">
+          <h3>KIDS</h3>
+          This packages come with kids balloons decor
+          <p>45 minutes 15 edited pictures - R 750</p>
+          <p>1 hour 30 edited pictures - R 1 250</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <h1>Video</h1>
+        <img src="images/img03.jpg" alt="event" style="width:100%">
+        <div class="card-hover-text">
+          <h3>VIDEO</h3>
+          <p>Short reel video - R 250</p>
+          <p>Short event highlight video - R 550</p>
+          <p>Full event video - R 2 000</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+    <div id="form-modal" class="modal">
+      
+      <div class="modal__content">
+      
+        <form class="booking-form" action="https://formsubmit.co/tshililoisani@gmail.com" method="POST">
+
+          <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+        
+          <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+        
+          <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" required>
+          </div>
+        
+          <div class="elem-group">
+            <label for="checkin-date">Shoot Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+          </div>
+        
+          <hr>
+        
+          <div class="elem-group inlined">
+            <label for="adult">How many people?</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+          </div>
+        
+          <div class="elem-group inlined">
+            <label for="child">How many outfits</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+          </div>
+        
+          <div class="elem-group">
+        
+          <label for="room-selection">Select Package</label>
+        
+          <select id="room-selection" name="room_preference" required>
+            <option value="">30 minutes 10 edited pictures</option>
+            <option value="connecting">45 minutes 20 edited picuters</option>
+            <option value="adjoining">1 hour 30 edited pictures</option>
+          </select>
+          </div>
+          <hr>
+          <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+          </div>
+          <button type="submit">Book Shoot</button>
+        </form>
+    
+      <a href="#" class="modal__close">&times;</a>
+      </div>
+      
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+	<script src="header_footer.js"></script>
+
+</body>
+
+</html>

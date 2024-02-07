@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/6843cc0703.js" crossorigin="anonymous"></script>
+    <title>Isani Photography</title>
+</head>
+<body>
+	  
+  <div id="header-container"></div>
+
+	<main id="homePage">
+		<div class="single-image-container">
+			<img src="images/img01.jpg" id="homeImage">
+		</div>
+		<div class="app">
+			<div class="tag-list">
+					<div
+						class="loop-slider"
+						style="--duration: 15951ms; --direction: normal">
+						<div class="inner" id="firstImageContainer"></div>
+					</div>
+	
+					<div
+						class="loop-slider"
+						style="--duration: 19260ms; --direction: reverse">
+						<div class="inner" id="secondImageContainer"></div>
+					</div>
+	
+					<div
+						class="loop-slider"
+						style="--duration: 10449ms; --direction: normal">
+						<div class="inner"  id="imageContainer"></div>
+					</div>
+	
+					<div class="fade"></div>
+			</div>
+
+			<div id="demo-modal" class="modal">
+					<span class="modal__close" onclick="closeModal()">&times;</span>
+					<div class="modal__content">
+							<div class="center-image slide">
+									<img id="modalImage" alt="Modal Image">
+							</div>
+					</div>
+			</div>
+	</div>
+	</main>
+
+	<div id="footer-container"></div>
+	<script src="header_footer.js"></script>
+	
+	<script src="script.js"></script>
+</body>
+</html>

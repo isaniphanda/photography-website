@@ -1,0 +1,11 @@
+as a client
+> view portfolio
+> view packages
+
+> make booking
+  > view available dates
+  > state Full name
+  > select shoot type studio/outdoor
+  > write a not or description
+
+> Get event qoute
